@@ -1,15 +1,134 @@
-{
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-  "contentVersion": "3.0.0",
-  "parameters": {
-    "webAppName": {
-      "value": "myWebAppUniqueName"
-    },
-    "sqlServerName": {
-      "value": "mySqlServerUniqueName"
-    },
-    "sqlDatabaseName": {
-      "value": "mySqlDatabaseName"
+[
+  {
+    "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-97e886df-a93e/operations/2E7F2967B2887CAE",
+    "operationId": "2E7F2967B2887CAE",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-06-19T06:02:46.2609438Z",
+      "duration": "PT26.307957S",
+      "trackingId": "6769b48a-8395-424e-a5d0-1bf3b1b2ca3b",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/sites/Contact-Database-Application-Ryan/basicPublishingCredentialsPolicies/scm",
+        "resourceType": "Microsoft.Web/sites/basicPublishingCredentialsPolicies",
+        "resourceName": "Contact-Database-Application-Ryan/scm"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-97e886df-a93e/operations/774B8F7DA799E615",
+    "operationId": "774B8F7DA799E615",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-06-19T06:02:45.6760108Z",
+      "duration": "PT0.5193853S",
+      "trackingId": "50b1d273-966a-4e6f-ab9d-bf4918db1de9",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/sites/Contact-Database-Application-Ryan/basicPublishingCredentialsPolicies/ftp",
+        "resourceType": "Microsoft.Web/sites/basicPublishingCredentialsPolicies",
+        "resourceName": "Contact-Database-Application-Ryan/ftp"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-97e886df-a93e/operations/EEE62E41EE25567F",
+    "operationId": "EEE62E41EE25567F",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-06-19T06:02:45.1042752Z",
+      "duration": "PT25.1512884S",
+      "trackingId": "7d65d28d-3ee4-4d68-b6ed-edf22d5dfa38",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/sites/Contact-Database-Application-Ryan",
+        "resourceType": "Microsoft.Web/sites",
+        "resourceName": "Contact-Database-Application-Ryan"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-97e886df-a93e/operations/688C53D595630432",
+    "operationId": "688C53D595630432",
+    "properties": {
+      "provisioningOperation": "Read",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-06-19T06:02:19.9047553Z",
+      "duration": "PT56.0382398S",
+      "trackingId": "708bc89b-9b9b-40bf-bfe3-b9f7ff5c261a",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/microsoft.insights/components/Contact-Database-Application-Ryan",
+        "resourceType": "microsoft.insights/components",
+        "resourceName": "Contact-Database-Application-Ryan",
+        "apiVersion": "2015-05-01"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-97e886df-a93e/operations/538509F5DACDF773",
+    "operationId": "538509F5DACDF773",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-06-19T06:02:19.5912571Z",
+      "duration": "PT55.7247416S",
+      "trackingId": "0c5076ae-342b-4f11-ba9a-54528ce230c3",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/microsoft.insights/components/Contact-Database-Application-Ryan",
+        "resourceType": "microsoft.insights/components",
+        "resourceName": "Contact-Database-Application-Ryan"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-97e886df-a93e/operations/8AFB7746A63605A5",
+    "operationId": "8AFB7746A63605A5",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-06-19T06:01:36.6018163Z",
+      "duration": "PT12.7353008S",
+      "trackingId": "da506a94-88bc-49a4-a743-237edb11ea0e",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/serverfarms/ASP-GitHubCopilotChallenges-8b59",
+        "resourceType": "Microsoft.Web/serverfarms",
+        "resourceName": "ASP-GitHubCopilotChallenges-8b59"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-97e886df-a93e/operations/07B44CFA227DCFDF",
+    "operationId": "07B44CFA227DCFDF",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-06-19T06:02:08.4122424Z",
+      "duration": "PT44.5457269S",
+      "trackingId": "873ab467-00ce-4f38-8c4a-a638a0120e63",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/DefaultResourceGroup-EA/providers/Microsoft.Resources/deployments/newWorkspaceTemplate",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "newWorkspaceTemplate"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-97e886df-a93e/operations/08584828300024410223",
+    "operationId": "08584828300024410223",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-06-19T06:02:46.4029219Z",
+      "duration": "PT0.0940574S",
+      "trackingId": "db46c23e-fc8e-48d4-b3c2-0c87549c6f4b",
+      "statusCode": "OK"
     }
   }
-}
+]

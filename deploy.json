@@ -1,56 +1,216 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-  "contentVersion": "3.0.0",
-  "parameters": {
-    "webAppName": {
-      "type": "string",
-      "metadata": {
-        "description": "Contact Database application"
-      }
-    },
-    "sqlServerName": {
-      "type": "string",
-      "metadata": {
-        "description": "CDA SQL Server."
-      }
-    },
-    "sqlDatabaseName": {
-      "type": "string",
-      "metadata": {
-        "description": "CDA SQL Database."
-      }
-    }
+  "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-97e886df-a93e",
+  "name": "Microsoft.Web-WebApp-Portal-97e886df-a93e",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourcegroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/sites/Contact-Database-Application-Ryan",
+    "marketplaceItemId": "Microsoft.WebSite",
+    "provisioningHash": "customize-post-provisioning-steps-webapp-deployment"
   },
-  "resources": [
-    {
-      "type": "Microsoft.Web/sites",
-      "apiVersion": "2020-06-01",
-      "name": "[parameters('webAppName')]",
-      "location": "[resourceGroup().location]",
-      "properties": {
-        "serverFarmId": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/serverfarms/', parameters('webAppName'), 'ServicePlan')]"
+  "properties": {
+    "templateHash": "11640095028094098310",
+    "parameters": {
+      "subscriptionId": {
+        "type": "String",
+        "value": "1cdecb88-4b22-479a-b779-da425828e170"
+      },
+      "resourceGroupName": {
+        "type": "String",
+        "value": "GitHub-Copilot-Challenges"
+      },
+      "name": {
+        "type": "String",
+        "value": "Contact-Database-Application-Ryan"
+      },
+      "location": {
+        "type": "String",
+        "value": "East Asia"
+      },
+      "hostingPlanName": {
+        "type": "String",
+        "value": "ASP-GitHubCopilotChallenges-8b59"
+      },
+      "serverFarmResourceGroup": {
+        "type": "String",
+        "value": "GitHub-Copilot-Challenges"
+      },
+      "alwaysOn": {
+        "type": "Bool",
+        "value": true
+      },
+      "ftpsState": {
+        "type": "String",
+        "value": "FtpsOnly"
+      },
+      "sku": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "skuCode": {
+        "type": "String",
+        "value": "S1"
+      },
+      "workerSize": {
+        "type": "String",
+        "value": "0"
+      },
+      "workerSizeId": {
+        "type": "String",
+        "value": "0"
+      },
+      "numberOfWorkers": {
+        "type": "String",
+        "value": "1"
+      },
+      "currentStack": {
+        "type": "String",
+        "value": "dotnet"
+      },
+      "phpVersion": {
+        "type": "String",
+        "value": "OFF"
+      },
+      "netFrameworkVersion": {
+        "type": "String",
+        "value": "v8.0"
       }
     },
-    {
-      "type": "Microsoft.Sql/servers",
-      "apiVersion": "2020-02-02-preview",
-      "name": "[parameters('sqlServerName')]",
-      "location": "[resourceGroup().location]",
-      "properties": {
-        "administratorLogin": "sqladmin",
-        "administratorLoginPassword": "ComplexPassword!23"
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2024-06-19T06:02:46.4425639Z",
+    "duration": "PT1M23.1199382S",
+    "correlationId": "7e684265-dfeb-4f46-b5be-51766f43be44",
+    "providers": [
+      {
+        "namespace": "Microsoft.Web",
+        "resourceTypes": [
+          {
+            "resourceType": "sites",
+            "locations": [
+              "eastasia"
+            ]
+          },
+          {
+            "resourceType": "sites/basicPublishingCredentialsPolicies",
+            "locations": [
+              null
+            ]
+          },
+          {
+            "resourceType": "serverfarms",
+            "locations": [
+              "eastasia"
+            ]
+          }
+        ]
       },
-      "resources": [
-        {
-          "type": "databases",
-          "apiVersion": "2020-02-02-preview",
-          "name": "[parameters('sqlDatabaseName')]",
-          "location": "[resourceGroup().location]",
-          "dependsOn": [
-            "[resourceId('Microsoft.Sql/servers', parameters('sqlServerName'))]"
-          ]
-        }
-      ]
-    }
-  ]
+      {
+        "namespace": "microsoft.insights",
+        "resourceTypes": [
+          {
+            "resourceType": "components",
+            "locations": [
+              "eastasia"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Resources",
+        "resourceTypes": [
+          {
+            "resourceType": "deployments",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/microsoft.insights/components/Contact-Database-Application-Ryan",
+            "resourceType": "microsoft.insights/components",
+            "resourceName": "Contact-Database-Application-Ryan"
+          },
+          {
+            "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/serverfarms/ASP-GitHubCopilotChallenges-8b59",
+            "resourceType": "Microsoft.Web/serverfarms",
+            "resourceName": "ASP-GitHubCopilotChallenges-8b59"
+          },
+          {
+            "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/microsoft.insights/components/Contact-Database-Application-Ryan",
+            "resourceType": "microsoft.insights/components",
+            "resourceName": "Contact-Database-Application-Ryan",
+            "apiVersion": "2015-05-01"
+          }
+        ],
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/sites/Contact-Database-Application-Ryan",
+        "resourceType": "Microsoft.Web/sites",
+        "resourceName": "Contact-Database-Application-Ryan"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/Sites/Contact-Database-Application-Ryan",
+            "resourceType": "Microsoft.Web/Sites",
+            "resourceName": "Contact-Database-Application-Ryan"
+          }
+        ],
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/sites/Contact-Database-Application-Ryan/basicPublishingCredentialsPolicies/scm",
+        "resourceType": "Microsoft.Web/sites/basicPublishingCredentialsPolicies",
+        "resourceName": "Contact-Database-Application-Ryan/scm"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/Sites/Contact-Database-Application-Ryan",
+            "resourceType": "Microsoft.Web/Sites",
+            "resourceName": "Contact-Database-Application-Ryan"
+          }
+        ],
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/sites/Contact-Database-Application-Ryan/basicPublishingCredentialsPolicies/ftp",
+        "resourceType": "Microsoft.Web/sites/basicPublishingCredentialsPolicies",
+        "resourceName": "Contact-Database-Application-Ryan/ftp"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/DefaultResourceGroup-EA/providers/Microsoft.Resources/deployments/newWorkspaceTemplate",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "newWorkspaceTemplate"
+          }
+        ],
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/microsoft.insights/components/Contact-Database-Application-Ryan",
+        "resourceType": "microsoft.insights/components",
+        "resourceName": "Contact-Database-Application-Ryan"
+      }
+    ],
+    "outputResources": [
+      {
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/DefaultResourceGroup-EA/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-1cdecb88-4b22-479a-b779-da425828e170-EA"
+      },
+      {
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/microsoft.insights/components/Contact-Database-Application-Ryan"
+      },
+      {
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/serverfarms/ASP-GitHubCopilotChallenges-8b59"
+      },
+      {
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/sites/Contact-Database-Application-Ryan"
+      },
+      {
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/sites/Contact-Database-Application-Ryan/basicPublishingCredentialsPolicies/ftp"
+      },
+      {
+        "id": "/subscriptions/1cdecb88-4b22-479a-b779-da425828e170/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/sites/Contact-Database-Application-Ryan/basicPublishingCredentialsPolicies/scm"
+      }
+    ],
+    "validationLevel": "Template"
+  }
 }
